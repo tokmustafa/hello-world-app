@@ -9,6 +9,10 @@ image:
   tag: stable
   pullPolicy: IfNotPresent
 
+app:
+  port: 5000
+
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
