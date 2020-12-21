@@ -28,14 +28,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     #  kubernetes.io/tls-acme: "true"
   hosts:
-    - host: ${deployment_endpoint}
+    - host: hello.tokmustafa.com
       paths:
       - /
 
   tls:
   - secretName: hello-world-tls
     hosts:
-    - ${deployment_endpoint}
+    - hello.tokmustafa.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
