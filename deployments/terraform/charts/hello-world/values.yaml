@@ -12,6 +12,11 @@ image:
 app:
   port: 5000
 
+globalEnvironments:
+  enabled: true
+  environments:
+  - name: ENVIRONMENTS
+    value: PROD
 
 imagePullSecrets: []
 nameOverride: ""
