@@ -26,20 +26,16 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 5000
               protocol: TCP
           livenessProbe:
             httpGet:
               path: /
-              port: "{{ .Values.app.port }}"
+              port: 5000
           readinessProbe:
             httpGet:
               path: /
-              port: "{{ .Values.app.port }}"
-{{- if .Values.globalEnvironments.enabled }}
-          env:
-{{ toYaml .Values.globalEnvironments.environments | indent 10 }}
-{{- if .Values.mysql.enabled }}
+              port: 5000
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
