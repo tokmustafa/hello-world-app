@@ -7,9 +7,9 @@ variable "deployment_environment" {
 variable "deployment_endpoint" {
     type = "map"
      default = {
-        test  = "test.hello"
-        dev  = "dev.hello"
-        qa   = "qa.hello"
+        test  = "test.hello.tokmustafa.com"
+        dev  = "dev.hello.tokmustafa.com"
+        qa   = "qa.hello.tokmustafa"
         prod = "hello"
         stage = "stage.hello"
   }
