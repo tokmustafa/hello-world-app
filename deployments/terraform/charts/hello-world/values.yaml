@@ -13,9 +13,10 @@ app:
 
 globalEnvironments:
   enabled: true
+
   environments:
   - name: ENVIRONMENTS
-    value: PROD
+    value: {deployment_environments}
 
 imagePullSecrets: []
 nameOverride: ""
