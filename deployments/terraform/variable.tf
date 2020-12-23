@@ -7,13 +7,13 @@ variable "deployment_environment" {
 variable "deployment_endpoint" {
     type = "map"
      default = {
-        test  = "test.hello.tokmustafa.com"
-        dev  = "dev.hello.tokmustafa.com"
-        qa   = "qa.hello.tokmustafa"
+        test  = "test.hello"
+        dev  = "dev.hello"
+        qa   = "qa.hello"
         prod = "hello"
         stage = "stage.hello"
   }
 }
 variable "google_domain_name" {
-    default = "fuchicorp.com"
+    default = "tokmustafa.com"
 }
